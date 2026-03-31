@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+@keyframes dropDown {
+  from {
+    transform: translateX(-50%) translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  max-width: 1200px;
+  height: 60px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: rgba(10, 10, 10, 0.443);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  font-family: 'Outfit', sans-serif;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: dropDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.navbar-logo img {
+  height: 80px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/* All links and buttons share the same base style */
+.navbar-links a,
+.navbar-links button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: #f0ece4;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: opacity 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links button:hover {
+  opacity: 1;
+  letter-spacing: 3px;
+}

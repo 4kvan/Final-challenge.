@@ -1,0 +1,19 @@
+#root {
+  width: 100%;
+  text-align: left;
+ 
+}
+body {
+
+  background-image: url(assets/background.jpg);
+  background-size: cover;      /* ← add this */
+  background-position: center; /* ← add this */
+  background-attachment: fixed;/* ← add this */
+  font-family: 'Outfit', sans-serif;
+  
+  
+  width: 100%;
+  overflow-x: hidden;
+  
+
+}

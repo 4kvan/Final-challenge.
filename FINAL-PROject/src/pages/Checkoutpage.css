@@ -1,0 +1,230 @@
+/* ── Checkout Page ── */
+.checkout-container {
+  min-height: 100vh;
+  background-color: #1a1410;
+  color: #e8d5b0;
+  font-family: 'Georgia', serif;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout-container h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #c9a96e44;
+  padding-bottom: 16px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* ── Form ── */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 700px;
+  background: #231c14;
+  border: 1px solid #c9a96e33;
+  border-radius: 4px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+/* ── Inputs ── */
+.checkout-input {
+  background: #1a1410;
+  border: 1px solid #c9a96e55;
+  border-radius: 3px;
+  color: #e8d5b0;
+  font-family: 'Georgia', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  padding: 14px 18px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.checkout-input:focus {
+  border-color: #c9a96e;
+}
+
+.checkout-input::placeholder {
+  color: #7a6a50;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* ── Button ── */
+.checkout-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #c9a96e;
+  color: #c9a96e;
+  font-family: 'Georgia', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  padding: 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.checkout-btn:hover {
+  background: #c9a96e;
+  color: #1a1410;
+}
+
+/* ── Order Summary ── */
+.order-summary {
+  width: 100%;
+  max-width: 700px;
+  background: #231c14;
+  border: 1px solid #c9a96e33;
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.order-summary h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #c9a96e33;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #c9a96e1a;
+}
+
+.order-item h3 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #e8d5b0;
+  margin: 0;
+}
+
+.order-item p {
+  color: #c9a96e;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #c9a96e55;
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  color: #c9a96e;
+}
+
+.order-history {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.order-history h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c9a96e33;
+}
+
+.order-card {
+    background: #231c14;
+    border: 1px solid #c9a96e33;
+    border-radius: 4px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #c9a96e;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c9a96e22;
+}
+
+.order-status {
+    background: #c9a96e22;
+    color: #c9a96e;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.order-card-item {
+    display: flex;
+    justify-content: space-between;
+    color: #e8d5b0;
+    font-size: 0.9rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #c9a96e11;
+}
+
+.order-card-total {
+    display: flex;
+    justify-content: space-between;
+    color: #c9a96e;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #c9a96e33;
+}
+
+.cancel-btn {
+    background: transparent;
+    border: 1px solid #8b2020;
+    color: #c94f4f;
+    font-family: 'Georgia', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cancel-btn:hover:not(:disabled) {
+    background: #8b2020;
+    color: #fff;
+}
+
+.cancel-btn:disabled {
+    border-color: #555;
+    color: #555;
+    cursor: not-allowed;
+}
